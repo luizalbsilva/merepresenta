@@ -1,3 +1,8 @@
+/*
+ | Inserção de Questões a serem respondidas
+ |
+ | lembrar de ajustar a sequencia (ultima linha) com o valor seguinte ao último ID inserido manualmente 
+ */
 INSERT INTO questions(
             id, text, category_id, created_at, updated_at, chosen, role_type)
     VALUES (1, 'Você é a favor da adoção de crianças por famílias LGBTs?', 1, current_date, current_date, true, 'truth');
@@ -38,3 +43,7 @@ INSERT INTO questions(
             id, text, category_id, created_at, updated_at, chosen, role_type)
     VALUES (10, 'Você é a favor da desmilitarização da polícia militar?', 4, current_date, current_date, true, 'truth');
 
+
+
+
+alter sequence questions_id_seq restart with 11
