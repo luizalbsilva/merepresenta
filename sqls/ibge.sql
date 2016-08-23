@@ -443,7 +443,6 @@ COPY cidade (codigo_composto, codigo, nome, version, estado_codigo, meso_regiao_
 1716703	16703	Colméia	1	17	1701	17003	TO	Colmeia
 1705557	5557	Combinado	1	17	1702	17008	TO	Combinado
 1705607	5607	Conceição do Tocantins	1	17	1702	17008	TO	Conceicao do Tocantins
-1706001	6001	Couto Magalhães	1	17	1701	17003	TO	Couto Magalhaes
 1706100	6100	Cristalândia	1	17	1701	17004	TO	Cristalandia
 1706258	6258	Crixás do Tocantins	1	17	1701	17005	TO	Crixas do Tocantins
 1706506	6506	Darcinópolis	1	17	1701	17001	TO	Darcinopolis
@@ -1178,7 +1177,6 @@ COPY cidade (codigo_composto, codigo, nome, version, estado_codigo, meso_regiao_
 2401008	1008	Apodi	1	24	2401	24002	RN	Apodi
 2401107	1107	Areia Branca	1	24	2401	24001	RN	Areia Branca
 2401206	1206	Arês	1	24	2404	24019	RN	Ares
-2401305	1305	Augusto Severo	1	24	2401	24003	RN	Augusto Severo
 2401404	1404	Baía Formosa	1	24	2404	24019	RN	Baia Formosa
 2401453	1453	Baraúna	1	24	2401	24001	RN	Barauna
 2401503	1503	Barcelona	1	24	2403	24014	RN	Barcelona
@@ -1223,7 +1221,6 @@ COPY cidade (codigo_composto, codigo, nome, version, estado_codigo, meso_regiao_
 2405009	5009	Jaçanã	1	24	2403	24014	RN	Jacana
 2405108	5108	Jandaíra	1	24	2403	24013	RN	Jandaira
 2405207	5207	Janduís	1	24	2401	24003	RN	Janduis
-2405306	5306	Januário Cicco	1	24	2403	24015	RN	Januario Cicco
 2405405	5405	Japi	1	24	2403	24014	RN	Japi
 2405504	5504	Jardim de Angicos	1	24	2402	24009	RN	Jardim de Angicos
 2405603	5603	Jardim de Piranhas	1	24	2402	24011	RN	Jardim de Piranhas
@@ -1511,7 +1508,6 @@ COPY cidade (codigo_composto, codigo, nome, version, estado_codigo, meso_regiao_
 2513851	13851	Santo André	1	25	2502	25011	PB	Santo Andre
 2513927	13927	São Bentinho	1	25	2501	25003	PB	Sao Bentinho
 2513901	13901	São Bento	1	25	2501	25001	PB	Sao Bento
-2513968	13968	São Domingos	1	25	2501	25003	PB	Sao Domingos
 2513943	13943	São Domingos do Cariri	1	25	2502	25011	PB	Sao Domingos do Cariri
 2513984	13984	São Francisco	1	25	2501	25003	PB	Sao Francisco
 2514008	14008	São João do Cariri	1	25	2502	25011	PB	Sao Joao do Cariri
@@ -4466,6 +4462,10 @@ COPY cidade (codigo_composto, codigo, nome, version, estado_codigo, meso_regiao_
 4203808	3808	Canoinhas	1	42	4202	42006	SC	Canoinhas
 4203253	3253	Capão Alto	1	42	4203	42010	SC	Capao Alto
 4203907	3907	Capinzal	1	42	4201	42004	SC	Capinzal
+2401305	1305	Campo Grande	1	24	2401	24003	RN	Campo Grande
+2513968	13968	São Domingos	1	25	2501	25003	PB	Sao Domingos
+1706001	6001	Couto de Magalhães	1	17	1701	17003	TO	Couto Magalhaes
+2405306	5306	Boa Saúde	1	24	2403	24015	RN	Januario Cicco
 4203956	3956	Capivari de Baixo	1	42	4206	42018	SC	Capivari de Baixo
 4204004	4004	Catanduvas	1	42	4201	42004	SC	Catanduvas
 4204103	4103	Caxambu do Sul	1	42	4201	42002	SC	Caxambu do Sul
