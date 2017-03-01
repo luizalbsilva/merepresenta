@@ -20,6 +20,7 @@ header {
     font-size: 1.2em;
     font-weight: bolder;
     padding: .5em 0 .5em 0;
+    text-transform: uppercase;
 }
 .content {
     color: #fff;
