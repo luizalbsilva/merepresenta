@@ -31,9 +31,7 @@
     <% if not @candidate.city_id %>
     <div class="login">
         <div class="texto">
-            <p>Prezada/o candidata/o,</p>
-
-            <p>Informamos que a foto que contará para o perfil do site será a mesma da conta de Facebook vinculada</p>
+            <p>Vereador/a, cadastre-se a partir do seu próprio perfil de Facebook (pessoal ou de campanha/mandato). Esta plataforma utilizará a foto que está no seu Facebook.</p>
         </div>
         <div class="nav">
             <%= form_tag(session_path(session[:user_id]), method: :delete) do %>
@@ -141,7 +139,7 @@
                 </div>
                 <% end %>
                 <div class="form-group row">
-                    <%= f.label :number, "Número de urna *",  {class: "col-md-2 control-label"} %>
+                    <%= f.label :number, "Número de urna na eleição de 2016*",  {class: "col-md-2 control-label"} %>
                     <div class="col-md-10">
                         <%= f.text_field :number, {class: "form-control"} %>
                     </div>
