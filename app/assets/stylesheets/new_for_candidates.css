@@ -29,6 +29,9 @@ h2 {
     font-weight: bolder;
     color: #582985;
 }
+h3 {
+    color: goldenrod;
+}
 label {
     width: 23%;
     display: inline-block;

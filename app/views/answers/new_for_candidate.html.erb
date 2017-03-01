@@ -7,7 +7,8 @@
 
 <div class="container">
     <h1>Questionário</h1>
-    <h2>Responda as perguntas abaixo para que suas eleitoras e eleitores saibam o que você pensa!</h2>
+    <h2>O que você, vereador/a, defende?</h2>
+    <h3>Agora, responda sim ou não às perguntas abaixo para finalizar seu perfil.</h3>
     <% @candidate.answers
         .select{|c| c.id !=nil }
         .sort{|a,b| a.id-b.id }
