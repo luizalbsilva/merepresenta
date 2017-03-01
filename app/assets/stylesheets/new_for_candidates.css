@@ -53,7 +53,8 @@ label {
     display: none;
 }
 .resposta+span:before {
-    content: "";
+    content: ".";
+    color: transparent;
     background-size: contain;
     height: 1px;
     width: 1px;
