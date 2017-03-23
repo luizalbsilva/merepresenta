@@ -11,7 +11,7 @@
     <h3>Agora, responda sim ou não às perguntas abaixo para finalizar seu perfil.</h3>
     <% @candidate.answers
         .select{|c| c.id !=nil }
-        .sort{|a,b| a.id-b.id }
+        .sort{|a,b| a.question_id-b.question_id }
         .each do |a| %>
         <div class="question">
             <span class="question-title">
