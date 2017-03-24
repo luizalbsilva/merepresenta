@@ -91,7 +91,6 @@ class CandidatesController < ApplicationController
   def finish
     @candidate = Candidate.find(session[:candidate_id])
     @candidate.update_attributes :finished_at => Time.now
-    CandidateMailer.finished(@candidate).deliver
   end
 
   def management
@@ -138,14 +137,6 @@ class CandidatesController < ApplicationController
         format.json {
           render json: result 
         }
-
-        CandidateMailer.resend_unique_url(@candidate).deliver             if result[:email]         == true
-        CandidateMailer.notify_meurio(@candidate).deliver                 if result[:mobile_phone]  == true and result[:email] == false
-        
-        if result[:email] == true and result[:mobile_phone] == true
-          CandidateMailer.resend_unique_url(@candidate).deliver
-          CandidateMailer.notify_meurio(@candidate).deliver
-        end
       end
     end
   end
