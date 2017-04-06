@@ -55,7 +55,8 @@
                 </div>
                 <% end %>
                 <div class="form-group row">
-                    <%= f.label :nickname, "Nome de urna *",  {class: "col-md-2 control-label"} %>
+			<span style="padding-left:15px;">(Nome pelo qual é conhecida/o, como seu nome de urna na última eleição)</span>
+                    <%= f.label :nickname, "Apelido *",  {class: "col-md-2 control-label"} %>
                     <div class="col-md-10">
                         <%= f.text_field :nickname, {class: "form-control"} %>
                     </div>
@@ -129,21 +130,6 @@
                     </div>
                 </div>
 
-                <% if @candidate.errors[:number].count > 0 %>
-                <div class="alert alert-danger" role="alert">
-                    <ul class="erros">
-                        <% @candidate.errors[:number].each do |msg| %>
-                        <li class="erro"><%= msg %></li>
-                        <% end %>
-                    </ul>
-                </div>
-                <% end %>
-                <div class="form-group row">
-                    <%= f.label :number, "Número de urna na eleição de 2016*",  {class: "col-md-2 control-label"} %>
-                    <div class="col-md-10">
-                        <%= f.text_field :number, {class: "form-control"} %>
-                    </div>
-                </div>
 
                 <% if @candidate.errors[:city_id].count > 0 %>
                 <div class="alert alert-danger" role="alert">
@@ -155,9 +141,10 @@
                 </div>
                 <% end %>
                 <div class="form-group row ">
-                    <label for="city_name" class="col-md-2 control-label">Confirmar município de voto*</label>
+                    <label for="city_name" class="col-md-2 control-label">Município *</label>
                     <div class="col-md-10">
                         <%= f.hidden_field :city_id %>
+			<span style="padding-left:0px;">(Município em que foi eleita/o)</span>
                         <input type="text" id="city_name" class="form-control" value= '<%= "#{@candidate.city.name}, #{@candidate.city.state}" if @candidate.city %>'>
                         <span class="loading_msg">Carregando...</span>
                         ** às vezes o menu de cidades demora pra carregar, mas espera um pouquinho que vai!
