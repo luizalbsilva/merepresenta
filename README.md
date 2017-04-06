@@ -8,6 +8,11 @@
 
 * ruby 2.1.9
 * rails 3.2.22.5
+* postgresql with additional modules installed (install postgres-contrib on Ubuntu Linux)
+
+From the psql command, run
+
+> CREATE EXTENSION unaccent;
 
 ## Minimal Setup
 Create a database config file at config/database.yml; you may use the config/database.sample.yml file as a starting point.
@@ -16,12 +21,16 @@ Use the bundle to install all the dependencies, as showed in example bellow:
 
 > bundle install
 
+In order to create the database structure, run
+
+> rake db:migrate
+
 To configure the facebook params, you must config this variables:
 - FB_ID: Your Facebook app ID 
 - FB_SECRET: Your App sercret key
 Please refer to https://developers.facebook.com/ for more information about them.
 
-In ubuntu linux you may configure them in your .bashrc file, located at your user's home dir as showed below:
+In Ubuntu Linux you may configure them in your .bashrc file, located at your user's home dir as showed below:
 > export FB_ID="12312312312"
 
 > export FB_SECRET="SASDSEWEWEWFA"
